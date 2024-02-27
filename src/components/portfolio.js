@@ -17,4 +17,6 @@ function PortfolioPage() {
       </div>
     </div>
   )
-};        
+};   
+
+export default PortfolioPage;
