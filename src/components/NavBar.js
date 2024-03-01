@@ -43,7 +43,7 @@ const NavBar = () => {
 //     appHeader.classList.add("app-header-transparent");
 //     appHeader.classList.remove("app-header-colored");
 //   }
-
+ 
 // appBody.addEventListener("scroll", e => {
 //   changeNavbar();
 // });

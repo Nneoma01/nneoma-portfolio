@@ -10,7 +10,7 @@ function PortfolioPage() {
       <div className="container">
         <div className="row gx-5 py-5 justify-content-center">
           <div className="col col-lg-4 col-md-6 col-xs-12">
-            <div>
+            <div className="portfolio-info">
               <a href="http://127.0.0.1:5500/index.html"><img className="cal-img" src={image1} alt="calculator image" /></a>
               <div className="git-link"><a href="https://github.com/Nneoma01/calculator-project.git">Github code</a></div>
             </div>
