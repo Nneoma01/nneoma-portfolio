@@ -14,15 +14,16 @@
 .portfolio-intro{
     margin-left: 100px;
 }
-.cal-img{
+.cal-img, .web-img{
     height: 350px;
     width: 350px;
     border-radius: 15px 15px 0 0;
 }
-.web-img{
-    height: 350px;
-    width: 350px; 
-    border-radius: 15px 15px 0 0;
+.web-img:hover{
+    transform: scale(1.02);
+}
+.cal-img:hover{
+    transform: scale(1.02);
 }
 .git-link{
     border: 2px solid rgb(47, 46, 46);
@@ -33,10 +34,6 @@
     border-radius: 0 0 15px 15px;
     box-shadow: 0 0 3px 3px grey;
     /* margin-top: 5px; */
-}
-
-.git-link:hover{
-    background-color: black;
 }
 a{
     text-decoration: none;
