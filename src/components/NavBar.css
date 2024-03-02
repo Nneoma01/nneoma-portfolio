@@ -4,6 +4,10 @@
   font-size: 1.5rem;
   color: white;
 }
+.navbar-icons{
+  display: flex;
+  flex-direction: row;
+}
 
 .app-link:hover{
   transform: scale(1.2);
@@ -53,75 +57,42 @@
 /* MOBILE CSS */
 .mobile-menu {
     width: 100%;
-    background-color: rgba(74, 69, 69, 0.5);
+    background-color: rgba(107, 104, 104, 0.5);
     height: 100vh;
     top: 0;
     left: 0;
     position: fixed;
     visibility: hidden;
 }
-
-.mobile-menu.active {
-    animation: 0.2s reveal;
-    animation-fill-mode: forwards;
-    animation-direction: normal;
-    animation-timing-function: ease-in;
-}
-
-@keyframes reveal {
-    0%{
-     visibility: hidden;
-     width: 0%;
-     opacity: 0;
-    }
-    100% {
-      visibility: visible;
-      width: 100%;
-      opacity: 1;
-    }
-}
-.mobile-menu.non-active {
-    animation: 0.1s non-reveal;
-    animation-fill-mode: forwards;
-    animation-direction: backwards;
-    animation-timing-function: ease-in;
-}
-
-@keyframes non-reveal {
-    from{
-     visibility: visible;
-     width: 100%;
-    }
-    to {
-      visibility: hidden;
-      width: 0%;
-    }
-  }
-
-.menubar{
+.sidebar{
     width: 75%;
     background-color: black;
     height: 100%;
     position: relative;
     padding-right: 10px;
 }
+
 #closeBtn{
-    color: white;
-    font-size: 45px;  
+  color: white;
+  font-size: 45px;
 }
 #icon-btn{
   font-size: 50px;
-  border: yellow;
-  padding: 5px;
-  color: yellow;
+  border: transparent;
+  color: white;
+  background-color: transparent;
+  padding: 5px 0 0 0;
+  left: 0;
 }
+
 .menu-items{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
 .menu-item{
-    color: white;
-    padding: 5px 0;
+  color: white;
+  padding: 5px 0;
 }

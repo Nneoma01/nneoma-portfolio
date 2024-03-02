@@ -35,21 +35,59 @@ const menu = {
   }]
 }
 
+const icon = {
+  profile: [{
+    title: <FaInstagram />,
+    link: "#instagram",
+    id: "insta"
+  },
+  {
+    title: <FaLinkedin />,
+    link: "#linkedin",
+    id: "linkedin"
+  },
+  {
+    title: <FaGithub />,
+    link: "#github",
+    id: "git"
+  },
+  {
+    title: <MdOutlineMail />,
+    link: "#email",
+    id: "email"
+  },
+  {
+    title: <RiContactsLine />,
+    link: "#contact",
+    id: "contact"
+  }]
+}
+
+const sidebar = {
+  profile: [{
+    title: "Home",
+    link: "#home",
+    id: "home"
+  },
+  {
+    title: "About",
+    link: "#about",
+    id: "about"
+  },
+  {
+    title: "Projects",
+    link: "#projects",
+    id: "projects"
+  },
+  {
+    title: "Contact",
+    link: "#contact",
+    id: "contact"
+  }]
+}
+
 
 const NavBar = () => {
-  const mobileMenu = document.querySelector(".mobile-menu")
-  const menuBar = document.querySelector(".menubar")
-
-  function showMobileMenu() {
-    mobileMenu.classList.add("active");
-    mobileMenu.classList.remove("non-active")
-  }
-
-  const hideMobileMenu = () => {
-    mobileMenu.classList.add("non-active")
-    mobileMenu.classList.remove("active")
-  }
-
   // const appHeader = document.querySelector(".App-header");
 
   // const changeNavbar = () => {
@@ -77,37 +115,35 @@ const NavBar = () => {
           }
         </div>
         <div className="navbar-icons">
-          <a className="app-link" href="#"><FaInstagram /></a>
-          <a className="app-link" href="#"><FaLinkedin /></a>
-          <a className="app-link" href="#"><FaGithub /></a>
-          <a className="app-link" href="#"><MdOutlineMail /></a>
-          <a className="app-link" href="#"><RiContactsLine /></a>
-        </div>
+        {
+            icon.profile.map((icon, index) => {
+              return <div key={index} className="app-link" id={icon.id}>{icon.title}</div>
+            })
+          }
+        </div>  
+      </div>
 
-        <div class="container d-block d-lg-none">
-          <button id="icon-btn" onclick="showMobileMenu()">
-            <MdMenu />
-          </button>
-        </div>
+      <div class="container d-block d-lg-none">
+        <button id="icon-btn">
+          <MdMenu />
+        </button>
+      </div>
 
-        <div class="mobile-menu">
-          <div class="menubar">
-            <div class="text-end">
-              <button id="closeBtn" onclick="hideMobileMenu()"><IoMdClose /></button>
-            </div>
-            <div class="menu-items">
-              <a class="menu-item" href="#">Home</a>
-              <a class="menu-item" href="#">About</a>
-              <a class="menu-item" href="#">Portfolio</a>
-              <a class="menu-item" href="#">Contact</a>
-            </div>
+      <div class="mobile-menu">
+        <div class="sidebar">
+          <div class="exit-btn">
+            <button id="closeBtn"><IoMdClose /></button>
+          </div>
+          <div class="menu-items">
+          {
+            sidebar.profile.map((menu, index) => {
+              return <div key={index} className="menu-item" id={sidebar.id}>{sidebar.title}</div>
+            })
+          }
           </div>
         </div>
       </div>
     </div>
-
-
-
 
   );
 }
