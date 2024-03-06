@@ -6,7 +6,6 @@ import { RiContactsLine } from "react-icons/ri";
 import { IoMdClose } from "react-icons/io";
 import { MdMenu } from "react-icons/md";
 import "../components/NavBar.css";
-import 'bootstrap/dist/css/bootstrap.css';
 
 const menu = {
   brand: {
@@ -104,8 +103,8 @@ const NavBar = () => {
 
 
   return (
-    <div>
-      <div className='App-header app-header-transparent d-none d-lg-flex' id="mynav">
+    <div className="car">
+      <div className='App-header app-header-transparent' id="mynav">
         <div className="navbar-name {menu.brand.class}">{menu.brand.name}</div>
         <div className="navbar-links" id="nav-link">
           {
@@ -123,7 +122,7 @@ const NavBar = () => {
         </div>  
       </div>
 
-      <div class="container d-block d-lg-none">
+      <div class="container">
         <button id="icon-btn">
           <MdMenu />
         </button>

@@ -71,6 +71,11 @@
     position: relative;
     padding-right: 10px;
 }
+.car{
+  position: fix
+}
+
+
 
 #closeBtn{
   color: white;
