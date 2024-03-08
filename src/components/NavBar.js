@@ -3,8 +3,6 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { MdOutlineMail } from "react-icons/md";
 import { RiContactsLine } from "react-icons/ri";
-import { IoMdClose } from "react-icons/io";
-import { MdMenu } from "react-icons/md";
 import "../components/NavBar.css";
 
 const menu = {
@@ -87,63 +85,34 @@ const sidebar = {
 
 
 const NavBar = () => {
-  // const appHeader = document.querySelector(".App-header");
+  const appHeader = document.getElementById("mynav");  
 
-  // const changeNavbar = () => {
-  //   appHeader.classList.remove("app-header-transparent");
-  //   appHeader.classList.add("app-header-colored");
-  // } else {
-  //   appHeader.classList.add ("app-header-transparent");
-  //   appHeader.classList.remove("app-header-colored");
-  // }
-
-  // window.addEventListener("scroll", e => {
-  //   changeNavbar();
-  // });
-
+  window.onscroll = () => {
+    if (window.scrollY > 300) {
+        appHeader.classList.add("app-header-active");
+    } else {
+        appHeader.classList.remove("app-header-active");
+    }
+  };
 
   return (
-    <div className="car">
-      <div className='App-header app-header-transparent' id="mynav">
-        <div className="navbar-name {menu.brand.class}">{menu.brand.name}</div>
-        <div className="navbar-links" id="nav-link">
-          {
-            menu.profile.map((menu, index) => {
-              return <div key={index} className="nav-link" id={menu.id}>{menu.title}</div>
-            })
-          }
-        </div>
-        <div className="navbar-icons">
+    <div className='App-header app-header-transparent' id="mynav">
+      <div className="navbar-name {menu.brand.class}">{menu.brand.name}</div>
+      <div className="navbar-links" id="nav-link">
         {
-            icon.profile.map((icon, index) => {
-              return <div key={index} className="app-link" id={icon.id}>{icon.title}</div>
-            })
-          }
-        </div>  
+          menu.profile.map((menu, index) => {
+            return <div key={index} className="nav-link" id={menu.id}>{menu.title}</div>
+          })
+        }
       </div>
-
-      <div class="container">
-        <button id="icon-btn">
-          <MdMenu />
-        </button>
-      </div>
-
-      <div class="mobile-menu">
-        <div class="sidebar">
-          <div class="exit-btn">
-            <button id="closeBtn"><IoMdClose /></button>
-          </div>
-          <div class="menu-items">
-          {
-            sidebar.profile.map((menu, index) => {
-              return <div key={index} className="menu-item" id={sidebar.id}>{sidebar.title}</div>
-            })
-          }
-          </div>
-        </div>
+      <div className="navbar-icons">
+        {
+          icon.profile.map((icon, index) => {
+            return <div key={index} className="app-link" id={icon.id}>{icon.title}</div>
+          })
+        }
       </div>
     </div>
-
   );
 }
 
