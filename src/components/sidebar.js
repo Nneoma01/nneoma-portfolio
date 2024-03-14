@@ -1,7 +1,6 @@
 import "../components/sidebar.css";
 import { IoMdClose } from "react-icons/io";
 import { MdMenu } from "react-icons/md";
-import React, { useState, useEffect } from 'react';
 
 const sidebar = {
   profile: [{
@@ -28,33 +27,15 @@ const sidebar = {
 
 
 
-function SideBar () {
-  const [width, setWidth] = useState(window.innerWidth);
-  const breakpoint = 700; // Set your desired breakpoint
-
-  useEffect(() => {
-    const handleResizeWindow = () => {
-      if (window.innerWidth < breakpoint) {
-        setWidth(false); // Hide the full menu
-      } else {
-        setWidth(true); // Show the full menu
-      }
-    };
-
-    window.addEventListener('resize', handleResizeWindow);
-
-    return () => {
-      window.removeEventListener('resize', handleResizeWindow);
-    };
-  }, []);
-
+function SideBar() {
   return (
-    <div>
-      <div className="container">
-        <button id="icon-btn">
-          <MdMenu />
-        </button>
-      </div>
+    <div >
+        <div className="container">
+          <button type="button" id="icon-btn">
+            <MdMenu />
+          </button>
+        </div>
+  
 
       <div className="mobile-menu">
         <div className="sidebar">

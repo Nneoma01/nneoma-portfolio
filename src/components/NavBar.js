@@ -4,6 +4,8 @@ import { FaGithub } from "react-icons/fa";
 import { MdOutlineMail } from "react-icons/md";
 import { RiContactsLine } from "react-icons/ri";
 import "../components/NavBar.css";
+import React, { useState, useEffect } from 'react';
+
 
 const menu = {
   brand: {
@@ -85,32 +87,43 @@ const sidebar = {
 
 
 const NavBar = () => {
-  const appHeader = document.getElementById("mynav");  
+  // const [addClass, setAddClass] = useState(false);
 
-  window.onscroll = () => {
-    if (window.scrollY > 300) {
+  useEffect(() => {
+    const handleScroll = () => {
+      const appHeader = document.getElementById("mynav");  
+      if (window.scrollY > 300) {
         appHeader.classList.add("app-header-active");
     } else {
         appHeader.classList.remove("app-header-active");
     }
-  };
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
-    <div className='App-header app-header-transparent' id="mynav">
-      <div className="navbar-name {menu.brand.class}">{menu.brand.name}</div>
-      <div className="navbar-links" id="nav-link">
-        {
-          menu.profile.map((menu, index) => {
-            return <div key={index} className="nav-link" id={menu.id}>{menu.title}</div>
-          })
-        }
-      </div>
-      <div className="navbar-icons">
-        {
-          icon.profile.map((icon, index) => {
-            return <div key={index} className="app-link" id={icon.id}>{icon.title}</div>
-          })
-        }
+    <div>
+      <div className='App-header app-header-transparent' id="mynav">
+        <div className="navbar-name {menu.brand.class}">{menu.brand.name}</div>
+        <div className="navbar-links" id="nav-link">
+          {
+            menu.profile.map((menu, index) => {
+              return <div key={index} className="nav-link" id={menu.id}>{menu.title}</div>
+            })
+          }
+        </div>
+        <div className="navbar-icons">
+          {
+            icon.profile.map((icon, index) => {
+              return <div key={index} className="app-link" id={icon.id}>{icon.title}</div>
+            })
+          }
+        </div>
       </div>
     </div>
   );

@@ -50,7 +50,7 @@
 
 
 .app-header-active{
-  transition: all .5s ease-in-out;
+  transition: all ease-in-out;
   background-color: black;
 }
 
