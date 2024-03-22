@@ -1,7 +1,7 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import NavBar from './components/NavBar';
-import SideBar from './components/sidebar';
+import SideBar from './components/Sidebar';
 import HomePage from './components/Home';
 import AboutPage from './components/About';
 import PortfolioPage from './components/portfolio';
@@ -18,14 +18,8 @@ function App() {
     const handleResizeWindow = () => {
       const show = window.innerWidth < breakpoint
       if (show) {
-        // console.log("show");
-        // console.log(show);
-        // console.log(window.innerWidth);
         setIsMobile(true); // show the full menu
       } else {
-        // console.log("else");
-        // console.log(show);
-        // console.log(window.innerWidth);
         setIsMobile(false); // hide the full menu
       }
     };

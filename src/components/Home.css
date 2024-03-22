@@ -15,9 +15,6 @@
     flex-wrap: wrap;
     padding-top: 150px;
 }
-/* .about-info{
-    margin-top: 80px;
-} */
 .tag-line{
     font-size: 3.2rem;
     font-weight: 500;
@@ -25,13 +22,3 @@
 .about-info span{
     font-size: 1.5rem;
 }
-/* .web-img, .cal-img{
-    transition: ;
-} */
-
-/* @media only screen and (max-width: 600px){
-    .about-profle{
-        flex-direction: column;
-    }
-
-} */
