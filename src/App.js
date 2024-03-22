@@ -18,14 +18,14 @@ function App() {
     const handleResizeWindow = () => {
       const show = window.innerWidth < breakpoint
       if (show) {
-        console.log("show");
-        console.log(show);
-        console.log(window.innerWidth);
+        // console.log("show");
+        // console.log(show);
+        // console.log(window.innerWidth);
         setIsMobile(true); // show the full menu
       } else {
-        console.log("else");
-        console.log(show);
-        console.log(window.innerWidth);
+        // console.log("else");
+        // console.log(show);
+        // console.log(window.innerWidth);
         setIsMobile(false); // hide the full menu
       }
     };

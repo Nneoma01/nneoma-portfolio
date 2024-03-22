@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button';
 
 function ContactPage() {
   return (
-    <div>
+    <div id="contact">
       <div className='contact-header head'>Contact</div>
       <div className="contact-intro">Get in touch with me</div>
       <div className="contact-info">

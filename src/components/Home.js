@@ -3,7 +3,7 @@ import "../components/Home.css";
 
 const HomePage = () => {
   return (
-    <div className="about-profile">
+    <div className="about-profile" id="home">
       <div className="about-info">
         <p className='tag-line'>Hi, I'm Nneoma Okagbue</p>
         <span>Front-end Web Developer</span>

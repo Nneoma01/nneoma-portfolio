@@ -6,7 +6,7 @@ import { FaArrowRight } from "react-icons/fa";
 const AboutPage = () => {
   return (
     <Container>
-      <div className="about">
+      <div className="about" id="About">
         <div className="about-header">About me</div>
         <div className="about-info">Hi there, I’m a web developer based in Lagos, Nigeria. I enjoy building beautiful, 
             functional web apps and websites. My mission is to work and collaborate with tech agencies within and outside

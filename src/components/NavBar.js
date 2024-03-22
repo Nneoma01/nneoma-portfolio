@@ -37,62 +37,37 @@ const menu = {
 const icon = {
   profile: [{
     title: <FaInstagram />,
-    link: "#instagram",
+    link: "https://www.instagram.com/__nneomah?igsh=MWR1dDB5dm1kcjl6aQ==",
     id: "insta"
   },
   {
     title: <FaLinkedin />,
-    link: "#linkedin",
+    link: "https://www.linkedin.com/in/nneoma-okagbue-37468421a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     id: "linkedin"
   },
   {
     title: <FaGithub />,
-    link: "#github",
+    link: "https://github.com/Nneoma01/nneoma-portfolio.git",
     id: "git"
   },
   {
     title: <MdOutlineMail />,
-    link: "#email",
+    // link: "https://mail.google.com/mail/u/?authuser=favourokagbue20@gmmail.com",
     id: "email"
   },
   {
     title: <RiContactsLine />,
-    link: "#contact",
+    link: "tel: 08141775550",
     id: "contact"
   }]
 }
-
-const sidebar = {
-  profile: [{
-    title: "Home",
-    link: "#home",
-    id: "home"
-  },
-  {
-    title: "About",
-    link: "#about",
-    id: "about"
-  },
-  {
-    title: "Projects",
-    link: "#projects",
-    id: "projects"
-  },
-  {
-    title: "Contact",
-    link: "#contact",
-    id: "contact"
-  }]
-}
-
 
 const NavBar = () => {
-  // const [addClass, setAddClass] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       const appHeader = document.getElementById("mynav");  
-      if (window.scrollY > 300) {
+      if (window.scrollY > 200) {
         appHeader.classList.add("app-header-active");
     } else {
         appHeader.classList.remove("app-header-active");
@@ -120,7 +95,7 @@ const NavBar = () => {
         <div className="navbar-icons">
           {
             icon.profile.map((icon, index) => {
-              return <div key={index} className="app-link" id={icon.id}>{icon.title}</div>
+              return <div key={index} className="app-link" id={icon.id}><a href={icon.link}>{icon.title}</a></div>
             })
           }
         </div>

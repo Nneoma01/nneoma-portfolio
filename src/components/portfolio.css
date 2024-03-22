@@ -38,6 +38,9 @@
     box-shadow: 0 0 3px 3px grey;
     /* margin-top: 5px; */
 }
+.row{
+    flex-wrap: wrap;
+}
 .link{
     color: white;
     text-transform: capitalize;
