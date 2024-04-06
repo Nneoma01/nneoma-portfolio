@@ -1,7 +1,7 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import NavBar from './components/NavBar';
-import SideBar from './components/Sidebar';
+import Sidebar from './components/Sidebar';
 import HomePage from './components/Home';
 import AboutPage from './components/About';
 import PortfolioPage from './components/portfolio';
@@ -34,7 +34,7 @@ function App() {
 
   return (
     <div className="App-body">
-      {isMobile ? <SideBar /> : <NavBar />}
+      {isMobile ? <Sidebar /> : <NavBar />}
       <HomePage />
       <AboutPage />
       <PortfolioPage />

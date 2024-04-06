@@ -26,7 +26,7 @@ const sidebar = {
   }]
 }
 
-function SideBar() {
+function Sidebar() {
   let sideMenu;
 
   useEffect(() => {
@@ -71,4 +71,4 @@ function SideBar() {
 }
 
 
-export default SideBar; 
+export default Sidebar; 

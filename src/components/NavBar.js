@@ -52,12 +52,12 @@ const icon = {
   },
   {
     title: <MdOutlineMail />,
-    // link: "https://mail.google.com/mail/u/?authuser=favourokagbue20@gmmail.com",
+    link: "https://mailto:favourokagbue20@gmmail.com",
     id: "email"
   },
   {
     title: <RiContactsLine />,
-    link: "tel: 08141775550",
+    link: "tel: +234 814 177 5550",
     id: "contact"
   }]
 }
