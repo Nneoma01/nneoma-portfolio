@@ -14,23 +14,19 @@ const menu = {
   },
   profile: [{
     title: "Home",
-    link: "#home",
-    id: "home"
+    id: "#home"
   },
   {
     title: "About",
-    link: "#about",
-    id: "about"
+    id: "#About"
   },
   {
     title: "Projects",
-    link: "#projects",
-    id: "projects"
+    id: "#projects"
   },
   {
     title: "Contact",
-    link: "#contact",
-    id: "contact"
+    id: "#contact"
   }]
 }
 
@@ -52,13 +48,13 @@ const icon = {
   },
   {
     title: <MdOutlineMail />,
-    link: "https://mailto:favourokagbue20@gmmail.com",
+    link: "mailto:favourokagbue20@gmail.com",
     id: "email"
   },
   {
     title: <RiContactsLine />,
     link: "tel: +234 814 177 5550",
-    id: "contact"
+    id: "contact"       
   }]
 }
 
@@ -88,7 +84,7 @@ const NavBar = () => {
         <div className="navbar-links" id="nav-link">
           {
             menu.profile.map((menu, index) => {
-              return <div key={index} className="nav-link" id={menu.id}>{menu.title}</div>
+              return <div key={index} className="nav-link"><a href={menu.id}>{menu.title}</a></div>
             })
           }
         </div>

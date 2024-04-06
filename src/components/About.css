@@ -8,11 +8,12 @@
     text-transform: capitalize;
     font-size: 2.2rem;
     text-decoration: darkgrey underline;
+    text-align: left;
 }
 .about-info{
     margin-top: -1px;
     font-size: 1.3rem;
-    text-align: center;
+    text-align: left;
     padding: 40px;
 }
 .button{

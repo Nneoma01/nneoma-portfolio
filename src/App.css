@@ -1,9 +1,10 @@
 .App-body{
-  background: linear-gradient(180deg, rgb(23, 23, 23), rgb(69, 68, 68));
+  background: linear-gradient(180deg, rgb(23, 23, 23), rgb(97, 94, 94));
   height: 100%; 
   width: 100%;
   margin: 0;
   top: 0;
+  
 }
 
 

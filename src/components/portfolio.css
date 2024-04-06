@@ -10,9 +10,11 @@
     font-size: 2.2rem;
     text-decoration: darkgrey underline;
     margin-left: 100px;
+    text-align: left;
 }
 .portfolio-intro{
     margin-left: 100px;
+    text-align: left;
 }
 .cal-img, .web-img{
     height: 350px;

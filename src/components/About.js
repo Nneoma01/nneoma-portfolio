@@ -16,7 +16,7 @@ const AboutPage = () => {
             practical knowledge and usage of <br/><span className='skill'>HTML, CSS, Bootstrap, JavaScript and React</span>
         </div>
         <div className="button">
-          <Button variant="light"> View Resume <FaArrowRight /></Button>
+          <Button variant="primary"><a href="https://www.linkedin.com/in/nneoma-okagbue-37468421a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">View Resume</a> <FaArrowRight /></Button>
         </div>
       </div>
     </Container>
