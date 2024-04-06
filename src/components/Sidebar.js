@@ -1,4 +1,4 @@
-import "../components/Sidebar.css";
+import "../components/sidebar.css";
 import { IoMdClose } from "react-icons/io";
 import { MdMenu } from "react-icons/md";
 import React, { useState, useEffect } from 'react';
