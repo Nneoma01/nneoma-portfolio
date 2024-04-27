@@ -51,5 +51,5 @@
 
 .app-header-active{
   transition: all ease-in-out;
-  background-color: black;
+  background-color: rgb(36, 36, 36);
 }
