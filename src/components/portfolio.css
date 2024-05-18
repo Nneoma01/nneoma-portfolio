@@ -28,12 +28,6 @@
     border: 2px solid rgb(47, 46, 46);
     box-shadow: 0 0 3px 3px grey;
 }
-.web-img:hover{
-    transform: scale(1.05);
-}
-.cal-img:hover{
-    transform: scale(1.05);
-}
 .portfolio-info{
     width: 300px;
 }

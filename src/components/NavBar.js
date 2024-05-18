@@ -26,7 +26,7 @@ const menu = {
   },
   {
     title: "Contact",
-    id: "#contact"
+    id: "#Contact"
   }]
 }
 

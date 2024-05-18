@@ -31,7 +31,7 @@ function ContactPage() {
   //   );
   // }
   return (
-    <div id="contact">
+    <div id="Contact">
       <div className='contact-header head'>Contact</div>
       <div className="contact-intro">Get in touch with me</div>
       <form action="https://formspree.io/f/mbjnwrgd" method="POST" className="contact-info">
