@@ -1,4 +1,5 @@
 import './App.css';
+import {Helmet} from "react-helmet";
 import 'bootstrap/dist/css/bootstrap.css';
 import NavBar from './components/NavBar';
 import Sidebar from './components/Sidebar';
@@ -34,6 +35,9 @@ function App() {
 
   return (
     <div className="App-body">
+       <Helmet>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Helmet>
       {isMobile ? <Sidebar /> : <NavBar />}
       <HomePage />
       <AboutPage />
