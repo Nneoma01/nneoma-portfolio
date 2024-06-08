@@ -37,7 +37,7 @@ function ContactPage() {
       <form action="https://formspree.io/f/mbjnwrgd" method="POST" className="contact-info">
         <input className="form" name="Name" type="text" placeholder="Enter your name" required />
         <input className="form" name="Email" type="email" placeholder="Enter your email" required/>
-        <textarea className="form" name="Message" rows="7" cols="10" placeholder="Enter your message..." required></textarea>
+        <textarea className="form" name="Message" rows="8" placeholder="Enter your message..." required></textarea>
         <div className="contact-btn">
           <button type="submit" className="buttons">Let's talk</button>
       </div>

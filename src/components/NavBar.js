@@ -9,7 +9,7 @@ import React, { useState, useEffect } from 'react';
 
 const menu = {
   brand: {
-    name: "Nneoma",
+    name: "Nneoma's Portfolio",
     class: "navbar-name"
   },
   profile: [{

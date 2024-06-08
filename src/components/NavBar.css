@@ -16,7 +16,8 @@
 .navbar-name {
   font-size: 2rem;
   color: white;
-  display: inline-block;
+  /* display: inline-block; */
+  font-family: cursive;
 }
 
 .nav-link:hover{

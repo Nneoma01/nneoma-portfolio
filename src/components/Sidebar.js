@@ -22,7 +22,7 @@ const sidebar = {
   {
     title: "Contact",
     link: "contact",
-    id: "#contact"
+    id: "#Contact"
   }]
 }
 
