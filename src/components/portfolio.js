@@ -1,6 +1,7 @@
 import "../components/portfolio.css";
 import image1 from "../images/calculator-image.jpg";
 import image2 from "../images/website-image.jpg";
+import image3 from "../images/logger-img.PNG";
 
 function PortfolioPage() {
   return (
@@ -11,19 +12,19 @@ function PortfolioPage() {
         <div className="row gx-3 gy-5 px-3 py-5 mx-auto justify-content-center">
           <div className="col-10 col-lg-4 col-md-6 col-xs-12 mb-3 d-flex justify-content-center">
             <div className="portfolio-info text-center">
-              <a href="https://calculator-project-msbnlx6pb-nneoma-okagbues-projects.vercel.app/"><img className="cal-img img-fluid" src={image1} alt="calculator image" /></a>
+              <a href="https://calculator-project-msbnlx6pb-nneoma-okagbues-projects.vercel.app/"><img className="cal-img img-fluid" src={image1} alt="calculator img" /></a>
               <div className="git-link"><a href="https://github.com/Nneoma01/calculator-project.git" className="link">Github code</a></div>
             </div>
           </div>
           <div className="col-10 col-lg-4 col-md-6 col-xs-12 mb-3 d-flex justify-content-center">
             <div className="portfolio-info text-center">
-              <a href="http://nneoma01.github.io/agency-website-/"><img className="web-img img-fluid" src={image2} alt="website image" /></a>
+              <a href="http://nneoma01.github.io/agency-website-/"><img className="web-img img-fluid" src={image2} alt="website img" /></a>
               <div className="git-link"><a href="https://github.com/Nneoma01/agency-website-.git" className="link">Github code</a></div>
             </div>
           </div>
           <div className="col-10 col-lg-4 col-md-6 col-xs-12 mb-3 d-flex justify-content-center">
             <div className="portfolio-info text-center">
-              <a href="https://finance-logger-project.vercel.app/"><img className="cal-img img-fluid" src={image1} alt="finance logger image" /></a>
+              <a href="https://finance-logger-project.vercel.app/"><img className="cal-img img-fluid" src={image3} alt="finance logger img" /></a>
               <div className="git-link"><a href="https://github.com/Nneoma01/Finance-Logger-project.git" className="link">Github code</a></div>
             </div>
           </div>
