@@ -21,6 +21,12 @@ function PortfolioPage() {
               <div className="git-link"><a href="https://github.com/Nneoma01/agency-website-.git" className="link">Github code</a></div>
             </div>
           </div>
+          <div className="col-10 col-lg-4 col-md-6 col-xs-12 mb-3 d-flex justify-content-center">
+            <div className="portfolio-info text-center">
+              <a href="https://finance-logger-project.vercel.app/"><img className="cal-img img-fluid" src={image1} alt="finance logger image" /></a>
+              <div className="git-link"><a href="https://github.com/Nneoma01/Finance-Logger-project.git" className="link">Github code</a></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
